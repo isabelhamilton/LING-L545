@@ -1,0 +1,42 @@
+! basic morphotactics for twenty English nouns
+
+Multichar_Symbols
+
+%>
+%<n%>
+LEXICON Root
+
+Nouns ;
+
+LEXICON N
+
+%<n%>: CASE ;
+
+LEXICON CASE
+
+%<pl%>:%>s #;
+# ;
+
+LEXICON Nouns
+
+dog:dogs N ;
+carrot:carrot N ;
+park:park N ;
+country:country N ;
+television:television N ;
+table:tables N ;
+reality:reality N ;
+court:court N ;
+food:food N ;
+paper:paper N ;
+sky:sky N ;
+shelf:shelf N ;
+human:humans N ;
+pen:pen N ;
+tree:tree N ;
+mineral:mineral N ;
+privacy:privacy N ;
+book:book N ;
+bamboo:bamboo N ;
+science:science N ;
+
