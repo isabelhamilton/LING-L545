@@ -1,0 +1,17 @@
+DELIMITERS = "." ;
+
+LIST DET = DET ;
+LIST PUNCT = PUNCT ;
+
+SECTION
+
+REMOVE DET IF (1C PUNCT) ;
+
+REMOVE IV IF (0 TV OR IV)
+(1C Acc) (NOT 1 AccAdv) ;
+
+REMOVE Acc IF (-1C Fin +
+IV) (NOT 0 AccAdv) ;
+
+REMOVE TV - Pass IF (NOT
+1* Acc) (NOT -1* Acc) ;
